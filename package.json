@@ -1,11 +1,11 @@
 {
-  "name": "react-guide",
+  "name": "react-ninja-star",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "start": "gulp"
   },
-  "author": "Brad Westfall <brad@azpixels.com>",
+  "author": "Michael Chavez <mchavez@space-rocket.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.9.1",
@@ -31,5 +31,24 @@
     "gulp-rename": "^1.2.2",
     "webpack": "^1.12.14",
     "webpack-stream": "^3.1.0"
-  }
+  },
+  "description": "## Final Guide",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigbassroller/react-ninja-star.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "express",
+    "gulp",
+    "webpack"
+  ],
+  "bugs": {
+    "url": "https://github.com/bigbassroller/react-ninja-star/issues"
+  },
+  "homepage": "https://github.com/bigbassroller/react-ninja-star#readme"
 }
