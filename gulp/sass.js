@@ -24,8 +24,8 @@ gulp.task('sass', function () {
         return gulp.src(bundleConfig.entries)
             .pipe(newer(path.join(bundleConfig.dest, bundleConfig.outputName)))
             .pipe(concat(bundleConfig.outputName))
-            .pipe(sass({outputStyle: 'compressed'}))
-            // .pipe(sass())
+            // .pipe(sass({outputStyle: 'compressed'}))
+            .pipe(sass())
             .pipe(gulp.dest(bundleConfig.dest));
     });
 });
