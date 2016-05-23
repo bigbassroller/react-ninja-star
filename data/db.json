@@ -44,6 +44,14 @@
   ],
   "widgets": [
     {
+      "id": 1,
+      "name": "Widget One"
+    },
+    {
+      "id": 2,
+      "name": "Widget Two"
+    },
+    {
       "id": 3,
       "name": "Widget Three"
     },
@@ -52,62 +60,47 @@
       "name": "Widget Four"
     }
   ],
-  "portfolio": [
+  "portfolioItems": [
     {
-      "project_name": "Eneconfoo",
-      "cover_photo": "enecon.png",
-      "case_study_url": "enecon",
-      "live_site_url": "http://eneconnorcal.com/",
-      "entry_title": "Custom WordPress Theme That is Reusable",
-      "entry_content": "Ma nizzle . Aliquam sagittis massa owned maurizzle.",
-      "featured_image": "banner-placeholder.png",
-      "categories": [
-        "web design",
-        "web development",
-        "wordpress"
-      ],
-      "project_completion_date": "May 2014",
-      "publish_date": "May 2014",
-      "post_order": 2,
-      "published": true,
-      "id": 3
+      "id": 1,
+      "name": "Michael Jackson",
+      "github": "mjackson",
+      "twitter": "mjackson",
+      "worksOn": "React Router"
     },
     {
-      "project_name": "CloudZilla",
-      "cover_photo": "portfolio-placeholder1@1x.png",
-      "case_study_url": "cloudzilla",
-      "live_site_url": "https://www.cloudzilla.com",
-      "entry_title": "Web & Graphic Design for Startup Helps Attract Silicon Valley Tech Talent",
-      "entry_content": "Lorem stuff fo sit amizzle, fo shizzle adipiscing elit.",
-      "featured_image": "banner-placeholder.png",
-      "categories": [
-        "web design",
-        "graphic design",
-        "illustration"
-      ],
-      "project_completion_date": "January 2016",
-      "publish_date": "April 19, 2016",
-      "post_order": 0,
-      "published": true,
-      "id": null
+      "id": 2,
+      "name": "Ryan Florence",
+      "github": "ryanflorence",
+      "twitter": "ryanflorence",
+      "worksOn": "React Router"
     },
     {
-      "project_name": "Public Library of Science",
-      "cover_photo": "plos.png",
-      "case_study_url": "plos",
-      "live_site_url": "http://blogs.plos.org/",
-      "entry_title": "WordPress Multisite, Built for Many Publishers",
-      "entry_content": "Donizzle posuere auctizzle mofo.",
-      "featured_image": "banner-placeholder.png",
-      "categories": [
-        "web development",
-        "wordpress"
-      ],
-      "project_completion_date": "October 2015",
-      "publish_date": "October 2015",
-      "post_order": 1,
-      "published": true,
-      "id": null
+      "id": 3,
+      "name": "Dan Abramov",
+      "github": "gaearon",
+      "twitter": "dan_abramov",
+      "worksOn": "Redux"
+    },
+    {
+      "id": 4,
+      "name": "Matt Zabriskie",
+      "github": "mzabriskie",
+      "twitter": "mzabriskie",
+      "worksOn": "Axios"
+    },
+    {
+      "id": 5,
+      "name": "Tobias Koppers",
+      "github": "sokra",
+      "worksOn": "Webpack"
+    },
+    {
+      "id": 6,
+      "name": "Sebastian McKenzie",
+      "github": "kittens",
+      "twitter": "sebmck",
+      "worksOn": "Babel"
     }
   ]
 }
