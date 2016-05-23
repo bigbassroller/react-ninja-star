@@ -66,41 +66,47 @@
       "name": "Michael Jackson",
       "github": "mjackson",
       "twitter": "mjackson",
-      "worksOn": "React Router"
+      "worksOn": "React Router",
+      "imageUrl": "/foo.png"
     },
     {
       "id": 2,
       "name": "Ryan Florence",
       "github": "ryanflorence",
       "twitter": "ryanflorence",
-      "worksOn": "React Router"
+      "worksOn": "React Router",
+      "imageUrl": "/foo.png"
     },
     {
       "id": 3,
       "name": "Dan Abramov",
       "github": "gaearon",
       "twitter": "dan_abramov",
-      "worksOn": "Redux"
+      "worksOn": "Redux",
+      "imageUrl": "/foo.png"
     },
     {
       "id": 4,
       "name": "Matt Zabriskie",
       "github": "mzabriskie",
       "twitter": "mzabriskie",
-      "worksOn": "Axios"
+      "worksOn": "Axios",
+      "imageUrl": "/foo.png"
     },
     {
       "id": 5,
       "name": "Tobias Koppers",
       "github": "sokra",
-      "worksOn": "Webpack"
+      "worksOn": "Webpack",
+      "imageUrl": "/foo.png"
     },
     {
       "id": 6,
       "name": "Sebastian McKenzie",
       "github": "kittens",
       "twitter": "sebmck",
-      "worksOn": "Babel"
+      "worksOn": "Babel",
+      "imageUrl": "/foo.png"
     }
   ]
 }
