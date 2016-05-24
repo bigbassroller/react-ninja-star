@@ -39,25 +39,25 @@ export function deletePortfolioItem(portfolioItemId) {
 }
 
 /**
- * getProfile() is much more complex because it has to make
- * three XHR requests to get all the profile info.
+ * getPortfolioProfile() is much more complex because it has to make
+ * three XHR requests to get all the portfolioProfile info.
  */
 
-export function getProfile(portfolioItemId) {
+export function getPortfolioProfile(portfolioItemId) {
 
-  // Start with an empty profile object and build it up
+  // Start with an empty portfolioProfile object and build it up
   // from multiple XHR requests.
-  let profile = {};
+  let portfolioProfile = {};
 
   // Get the portfolio item data from our local database.
   return axios.get('http://localhost:3001/portfolio/' + portfolioItemId)
     .then(response => {
 
       let portfolioItem = response.data;
-      profile.name = portfolioItem.name;
-      profile.twitter = portfolioItem.twitter;
-      profile.worksOn = portfolioItem.worksOn;
-      profile.imageUrl = portfolioItem.imageUrl;
+      portfolioProfile.name = portfolioItem.name;
+      portfolioProfile.twitter = portfolioItem.twitter;
+      portfolioProfile.worksOn = portfolioItem.worksOn;
+      portfolioProfile.imageUrl = portfolioItem.imageUrl;
 
       // Use the github attribute from the previous request to
       // send a XHR requests to portfolio API, for the
@@ -68,9 +68,9 @@ export function getProfile(portfolioItemId) {
 
         let githubProfile = results[0].data;
 
-        profile.imageUrl = githubProfile.imageUrl;
+        portfolioProfile.imageUrl = githubProfile.imageUrl;
 
-        store.dispatch(portfolioItemProfileSuccess(profile));
+        store.dispatch(portfolioItemProfileSuccess(portfolioProfile));
 
         return;
 
