@@ -1,27 +1,27 @@
 import axios from 'axios';
 import store from '../store';
-import { getWidgetsSuccess, deleteWidgetSuccess } from '../actions/widget-actions';
+import { getPortfolioItemsSuccess, deletePortfolioItemSuccess } from '../actions/widget-actions';
 
 /**
  * Get widgets
  */
 
-export function getWidgets() {
-  return axios.get('http://localhost:3001/widgets')
+export function getPortfolioItems() {
+  return axios.get('http://localhost:3001/portfolio')
     .then(response => {
-      store.dispatch(getWidgetsSuccess(response.data));
+      store.dispatch(getPortfolioItemsSuccess(response.data));
       return response;
     });
 }
 
 /**
- * Search Widgets
+ * Search Portfolio Items
  */
 
-export function searchWidgets(query = '') {
-  return axios.get('http://localhost:3001/widgets?q='+ query)
+export function searchPortfolioItems(query = '') {
+  return axios.get('http://localhost:3001/portfolio?q='+ query)
     .then(response => {
-      store.dispatch(getWidgetsSuccess(response.data));
+      store.dispatch(getPortfolioItemsSuccess(response.data));
       return response;
     });
 }
@@ -30,10 +30,10 @@ export function searchWidgets(query = '') {
  * Delete a widget
  */
 
-export function deleteWidget(widgetId) {
-  return axios.delete('http://localhost:3001/widgets/' + widgetId)
+export function deletePortfolioItem(portfolioItemID) {
+  return axios.delete('http://localhost:3001/portfolio/' + portfolioItemID)
     .then(response => {
-      store.dispatch(deleteWidgetSuccess(widgetId));
+      store.dispatch(deletePortfolioItemSuccess(portfolioItemID));
       return response;
     });
 }
