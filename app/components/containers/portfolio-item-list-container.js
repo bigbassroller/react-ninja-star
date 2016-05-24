@@ -22,7 +22,7 @@ const PortfolioItemListContainer = React.createClass({
 
 const mapStateToProps = function(store) {
   return {
-    portfolioItems: store.widgetState.portfolioItems
+    portfolioItems: store.portfolioItemState.portfolioItems
   };
 };
 
