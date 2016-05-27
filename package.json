@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "postinstall": "remotedev-debugger [port: 3000]"
   },
   "author": "Michael Chavez <mchavez@space-rocket.com>",
   "license": "ISC",
@@ -38,6 +39,7 @@
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.0.6",
     "gulp-rename": "^1.2.2",
+    "remote-redux-devtools-on-debugger": "^0.4.6",
     "webpack": "^1.12.14",
     "webpack-stream": "^3.1.0"
   },

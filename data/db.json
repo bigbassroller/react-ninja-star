@@ -60,53 +60,22 @@
       "name": "Widget Four"
     }
   ],
-  "portfolioItems": [
+  "portfolio-items": [
     {
       "id": 1,
-      "name": "Michael Jackson",
-      "github": "mjackson",
-      "twitter": "mjackson",
-      "worksOn": "React Router",
-      "imageUrl": "/foo.png"
+      "name": "Portfolio One"
     },
     {
       "id": 2,
-      "name": "Ryan Florence",
-      "github": "ryanflorence",
-      "twitter": "ryanflorence",
-      "worksOn": "React Router",
-      "imageUrl": "/foo.png"
+      "name": "Portfolio Two"
     },
     {
       "id": 3,
-      "name": "Dan Abramov",
-      "github": "gaearon",
-      "twitter": "dan_abramov",
-      "worksOn": "Redux",
-      "imageUrl": "/foo.png"
+      "name": "Portfolio Three"
     },
     {
       "id": 4,
-      "name": "Matt Zabriskie",
-      "github": "mzabriskie",
-      "twitter": "mzabriskie",
-      "worksOn": "Axios",
-      "imageUrl": "/foo.png"
-    },
-    {
-      "id": 5,
-      "name": "Tobias Koppers",
-      "github": "sokra",
-      "worksOn": "Webpack",
-      "imageUrl": "/foo.png"
-    },
-    {
-      "id": 6,
-      "name": "Sebastian McKenzie",
-      "github": "kittens",
-      "twitter": "sebmck",
-      "worksOn": "Babel",
-      "imageUrl": "/foo.png"
+      "name": "Portfolio Four"
     }
   ]
 }
