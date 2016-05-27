@@ -11,6 +11,8 @@ const mapStateToProps = function(store) {
     totalResults = store.userState.users.length;
   } else if (searchType === 'widgets') {
     totalResults = store.widgetState.widgets.length;
+  } else if (searchType === 'portfolioItems') {
+    totalResults = store.portfolioItemState.portfolioItems.length;
   }
 
   return {

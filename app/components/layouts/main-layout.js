@@ -21,6 +21,7 @@ export default function(props) {
               <ul className="nav navbar-nav pull-right">
                 <li><Link to="/users" activeClassName="active">Users</Link></li>
                 <li><Link to="/widgets" activeClassName="active">Widgets</Link></li>
+                <li><Link to="/portfolio-items" activeClassName="active">Portfolio</Link></li>
               </ul>
             </div>
           </div>
