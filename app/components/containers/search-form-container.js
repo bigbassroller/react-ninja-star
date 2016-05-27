@@ -1,6 +1,7 @@
 import React from 'react';
 import * as userApi from '../../api/user-api';
 import * as widgetApi from '../../api/widget-api';
+import * as portfolioItemApi from '../../api/portfolio-item-api';
 import { loadSearchLayout } from '../../actions/search-layout-actions';
 import SearchForm from '../views/search-form';
 
@@ -19,6 +20,8 @@ const SearchFormContainer = React.createClass({
       userApi.searchUsers(query);
     } else if (this.props.searchType === 'widgets') {
       widgetApi.searchWidgets(query);
+    } else if (this.props.searchType === 'portfolioItems') {
+      portfolioItemApi.searchPortfolioItems(query);
     }
   },
 

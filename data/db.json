@@ -63,19 +63,19 @@
   "portfolio-items": [
     {
       "id": 1,
-      "name": "Widget One"
+      "name": "Portfolio One"
     },
     {
       "id": 2,
-      "name": "Widget Two"
+      "name": "Portfolio Two"
     },
     {
       "id": 3,
-      "name": "Widget Three"
+      "name": "Portfolio Three"
     },
     {
       "id": 4,
-      "name": "Widget Four"
+      "name": "Portfolio Four"
     }
   ]
 }

@@ -12,7 +12,7 @@ export default function(props) {
           <div key={portfolioItem.id} className="data-list-item">
             <div className="details">{portfolioItem.name}</div>
             <div className="controls">
-              <button onClick={props.deletePortfolio.bind(null, portfolioItem.id)} className="delete">Delete</button>
+              <button onClick={props.deletePortfolioItem.bind(null, portfolioItem.id)} className="delete">Delete</button>
             </div>
           </div>
         );

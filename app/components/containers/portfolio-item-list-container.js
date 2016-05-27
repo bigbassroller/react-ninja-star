@@ -9,7 +9,7 @@ const PortfolioItemListContainer = React.createClass({
 
   componentDidMount: function() {
     portfolioItemApi.getPortfolioItems();
-    store.dispatch(loadSearchLayout('portfolioItems', 'PortfolioItem Results'));
+    store.dispatch(loadSearchLayout('portfolioItems', 'Portfolio Item Results:'));
   },
 
   render: function() {
