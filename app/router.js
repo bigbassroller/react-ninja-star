@@ -3,14 +3,14 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 // Layouts
 import MainLayout from './components/layouts/main-layout';
-import SearchLayoutContainer from './components/containers/search-layout-container';
+import SearchLayoutContainer from './components/containers/search/search-layout-container';
 
 // Pages
 import Home from './components/pages/home';
-import UserListContainer from './components/containers/user-list-container';
-import UserProfileContainer from './components/containers/user-profile-container';
-import WidgetListContainer from './components/containers/widget-list-container';
-import PortfolioItemListContainer from './components/containers/portfolio-items/portfolio-item-list-container';
+import UserListContainer from './components/containers/user/user-list-container';
+import UserProfileContainer from './components/containers/user/user-profile-container';
+import WidgetListContainer from './components/containers/widget/widget-list-container';
+import PortfolioItemListContainer from './components/containers/portfolio-item/portfolio-item-list-container';
 
 export default (
   <Router history={browserHistory}>
