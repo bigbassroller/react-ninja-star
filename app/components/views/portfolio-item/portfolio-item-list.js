@@ -10,7 +10,9 @@ export default function(props) {
 
         return (
           <div key={portfolioItem.id} className="data-list-item">
-            <div className="details">{portfolioItem.name}</div>
+            <div className="details">
+              <Link to={'/portfolio-items/' + portfolioItem.id}>{portfolioItem.name}</Link>
+            </div>
             <div className="controls">
               <button onClick={props.deletePortfolioItem.bind(null, portfolioItem.id)} className="delete">Delete</button>
             </div>

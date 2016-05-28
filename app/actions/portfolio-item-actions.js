@@ -13,3 +13,10 @@ export function deletePortfolioItemSuccess(portfolioItemId) {
     portfolioItemId
   };
 }
+
+export function singlePortfolioItemSuccess(singlePortfolioItem) {
+  return {
+    type: types.SINGLE_PORTFOLIO_ITEM_SUCCESS,
+    singlePortfolioItem
+  };
+}

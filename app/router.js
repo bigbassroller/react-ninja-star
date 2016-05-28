@@ -11,6 +11,7 @@ import UserListContainer from './components/containers/user/user-list-container'
 import UserProfileContainer from './components/containers/user/user-profile-container';
 import WidgetListContainer from './components/containers/widget/widget-list-container';
 import PortfolioItemListContainer from './components/containers/portfolio-item/portfolio-item-list-container';
+import SinglePortfolioItemContainer from './components/containers/portfolio-item/single-portfolio-item-container';
 
 export default (
   <Router history={browserHistory}>
@@ -34,6 +35,7 @@ export default (
           <Route component={SearchLayoutContainer}>
             <IndexRoute component={PortfolioItemListContainer} />
           </Route>
+          <Route path=":portfolioItemId" component={SinglePortfolioItemContainer} />
         </Route>
 
     </Route>

@@ -18,6 +18,9 @@ const portfolioItemReducer = function(state = initialState, action) {
       const newPortfolioItems = _.filter(state.portfolioItems, portfolioItem => portfolioItem.id != action.portfolioItemId);
       return Object.assign({}, state, { portfolioItems: newPortfolioItems })
 
+    case types.SINGLE_PORTFOLIO_ITEM_SUCCESS:
+      return Object.assign({}, state, { singlePortfolioItem: action.singlePortfolioItem });
+
   }
 
   return state;

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import store from '../store';
-import { getPortfolioItemsSuccess, deletePortfolioItemSuccess } from '../actions/portfolio-item-actions';
+import { getPortfolioItemsSuccess, deletePortfolioItemSuccess, singlePortfolioItemSuccess } from '../actions/portfolio-item-actions';
 
 /**
  * Get widgets
@@ -27,7 +27,7 @@ export function searchPortfolioItems(query = '') {
 }
 
 /**
- * Delete a widget
+ * Delete a Portfolio Item
  */
 
 export function deletePortfolioItem(portfolioItemID) {
@@ -35,5 +35,21 @@ export function deletePortfolioItem(portfolioItemID) {
     .then(response => {
       store.dispatch(deletePortfolioItemSuccess(portfolioItemID));
       return response;
+    });
+}
+
+/**
+ * Get a Portfolio Item
+ * portfolio.id
+ * portfolio.name
+ */
+
+export function getSinglePortfolioItem(portfolioItemID) {
+
+  return axios.get('http://localhost:3001/portfolio-items/' + portfolioItemID)
+    .then(response => {
+      let portfolio = response.data;
+      store.dispatch(singlePortfolioItemSuccess(portfolio));
+      return;
     });
 }
