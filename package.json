@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "gulp",
-    "postinstall": "remotedev-debugger [port: 3000]"
+    "start": "gulp"
   },
   "author": "Michael Chavez <mchavez@space-rocket.com>",
   "license": "ISC",
@@ -25,6 +24,7 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
     "redux": "^3.5.2",
+    "remote-redux-devtools": "^0.4.7",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.0"
   },
@@ -39,7 +39,8 @@
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.0.6",
     "gulp-rename": "^1.2.2",
-    "remote-redux-devtools-on-debugger": "^0.4.6",
+    "remote-redux-devtools": "^0.4.7",
+    "remote-redux-devtools-on-debugger": "^0.4.7",
     "webpack": "^1.12.14",
     "webpack-stream": "^3.1.0"
   },
